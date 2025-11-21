@@ -4,9 +4,9 @@ This document demonstrates the full workflow of The Dividend Factory, a BCH Chip
 
 ## Demo Video
 
-[![Watch the full demo](docs/01_landing.png)](https://github.com/getcakedieyoungx/The-Dividend-Factory/raw/main/docs/demo.webp)
+> **Note:** For the full interactive demo video, [download demo.webp](https://github.com/getcakedieyoungx/The-Dividend-Factory/raw/main/docs/demo.webp) and open it in your browser or video player.
 
-*Click the image above to download and watch the complete interaction flow showing wallet creation, contract deployment, and distribution execution.*
+Below are key screenshots from the workflow:
 
 ---
 
