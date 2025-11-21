@@ -1,17 +1,3 @@
-# The Dividend Factory (Chipnet Edition)
-
-**Problem:** Sending BCH dividends to 1000 token holders usually requires 1000 transactions or complex, trusted off-chain scripts. It's inefficient and centralized.
-
-**Solution:** We use the new **Layla Upgrade** opcodes (`OP_BEGIN`/`OP_UNTIL`) to perform native loops on-chain. This allows a single contract interaction to calculate and distribute dividends to multiple recipients in one go, enforcing logic purely through Bitcoin Cash Script.
-
-## 🎥 Live Demo
-
-> [▶️ **Click here to watch the full high-quality demo video (.webm)**](assets/demo.webm)
-
-## 📸 Interface Preview
-
-<table>
-  <tr>
     <td><img src="assets/shot-1-monitor.png" alt="Dashboard Monitor" width="400"/></td>
     <td><img src="assets/shot-2-connected.png" alt="Wallet Connected" width="400"/></td>
   </tr>
