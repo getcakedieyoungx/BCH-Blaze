@@ -1,3 +1,28 @@
+# The Dividend Factory (Chipnet Edition)
+
+> A decentralized dividend distribution system leveraging Bitcoin Cash's new Layla Upgrade opcodes for on-chain loop execution.
+
+**🌐 Live Demo:** [https://the-dividend-factory-2xnpet9lz-alperens-projects-e8a4fdab.vercel.app](https://the-dividend-factory-2xnpet9lz-alperens-projects-e8a4fdab.vercel.app)
+
+---
+
+## 🎥 Video Demo
+
+Watch the wallet creation flow in action (10s):
+
+![Demo Video](assets/demo_video.webp)
+
+---
+
+## The Problem
+
+Traditional dividend distribution to token holders faces significant challenges:
+
+- **Scalability:** Sending dividends to 1000+ holders requires 1000+ individual transactions
+- **Cost:** Each transaction incurs network fees, making small distributions uneconomical
+- **Centralization:** Off-chain scripts require trusted intermediaries to execute distributions
+- **Complexity:** Coordinating mass payouts requires complex infrastructure
+
 ## Our Solution
 
 The Dividend Factory uses Bitcoin Cash's **Layla Upgrade** to perform dividend calculations and distributions entirely on-chain using native loop opcodes (`OP_BEGIN`/`OP_UNTIL`). This enables:
@@ -6,12 +31,6 @@ The Dividend Factory uses Bitcoin Cash's **Layla Upgrade** to perform dividend c
 ✅ **Trustless Execution:** All logic enforced by the blockchain, no intermediaries needed  
 ✅ **Cost Efficiency:** Dramatically reduced fees compared to individual transactions  
 ✅ **Transparency:** All distribution logic is publicly auditable on-chain
-
----
-
-## 🎥 Demo
-
-For a complete walkthrough with screenshots and technical details, see **[DEMO.md](DEMO.md)**.
 
 ---
 
@@ -141,10 +160,27 @@ contract DividendDistributor(int dividendPerToken) {
         }
     }
 }
+```
+
+---
+
+## Deployment
+
+**Live Site:** [https://the-dividend-factory-2xnpet9lz-alperens-projects-e8a4fdab.vercel.app](https://the-dividend-factory-2xnpet9lz-alperens-projects-e8a4fdab.vercel.app)
+
+**Contract Address:** `bchtest:pq...` (Check browser console for latest deployment)
+
+---
+
+## Hackathon Submission
+
+**Track:** Chipnet (Layla Upgrade)  
 **Team:** getcakedieyoungx  
 **Repository:** [github.com/getcakedieyoungx/The-Dividend-Factory](https://github.com/getcakedieyoungx/The-Dividend-Factory)
 
 This project demonstrates practical, real-world usage of the Layla Upgrade's new VM opcodes in a dividend distribution scenario. No off-chain computation, no trusted intermediaries—just pure on-chain logic.
+
+For detailed walkthrough, see **[DEMO.md](DEMO.md)**.
 
 ---
 
