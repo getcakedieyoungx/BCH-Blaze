@@ -141,21 +141,6 @@ contract DividendDistributor(int dividendPerToken) {
         }
     }
 }
-```
-
----
-
-## Deployment
-
-**Live Site:** [https://the-dividend-factory-2xnpet9lz-alperens-projects-e8a4fdab.vercel.app](https://the-dividend-factory-2xnpet9lz-alperens-projects-e8a4fdab.vercel.app)
-
-**Contract Address:** `bchtest:pq...` (Check browser console for latest deployment)
-
----
-
-## Hackathon Submission
-
-**Track:** Chipnet (Layla Upgrade)  
 **Team:** getcakedieyoungx  
 **Repository:** [github.com/getcakedieyoungx/The-Dividend-Factory](https://github.com/getcakedieyoungx/The-Dividend-Factory)
 
