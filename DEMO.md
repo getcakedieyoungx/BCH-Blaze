@@ -2,9 +2,7 @@
 
 This document demonstrates the full workflow of The Dividend Factory, a BCH Chipnet dApp that uses the Layla Upgrade's native loop opcodes to distribute dividends on-chain.
 
-## Demo Video
 
-> **Note:** For the full interactive demo video, [download demo.webp](https://github.com/getcakedieyoungx/The-Dividend-Factory/raw/main/docs/demo.webp) and open it in your browser or video player.
 
 Below are key screenshots from the workflow:
 
