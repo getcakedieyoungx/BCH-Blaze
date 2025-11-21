@@ -1,0 +1,58 @@
+pragma cashscript ^0.12.0;
+
+// DividendDistributor.cash
+// Distributes dividends to token holders based on their input token amount.
+// Note: 'while' loops are not yet supported in this CashScript version.
+// We implement an unrolled loop for up to 5 inputs as a Proof of Concept.
+
+contract DividendDistributor(
+    int dividendPerToken
+) {
+    function distribute() {
+        int len = tx.inputs.length;
+        
+        // Unrolled loop for max 5 inputs
+        // i = 0
+        if (len > 0) {
+            int inputTokens0 = tx.inputs[0].tokenAmount;
+            if (inputTokens0 > 0) {
+                require(tx.outputs[0].value == inputTokens0 * dividendPerToken);
+            }
+        }
+        
+        // i = 1
+        if (len > 1) {
+            int inputTokens1 = tx.inputs[1].tokenAmount;
+            if (inputTokens1 > 0) {
+                require(tx.outputs[1].value == inputTokens1 * dividendPerToken);
+            }
+        }
+
+        // i = 2
+        if (len > 2) {
+            int inputTokens2 = tx.inputs[2].tokenAmount;
+            if (inputTokens2 > 0) {
+                require(tx.outputs[2].value == inputTokens2 * dividendPerToken);
+            }
+        }
+
+        // i = 3
+        if (len > 3) {
+            int inputTokens3 = tx.inputs[3].tokenAmount;
+            if (inputTokens3 > 0) {
+                require(tx.outputs[3].value == inputTokens3 * dividendPerToken);
+            }
+        }
+
+        // i = 4
+        if (len > 4) {
+            int inputTokens4 = tx.inputs[4].tokenAmount;
+            if (inputTokens4 > 0) {
+                require(tx.outputs[4].value == inputTokens4 * dividendPerToken);
+            }
+        }
+        
+        // Limit to 5 inputs for this demo
+        require(len <= 5);
+    }
+}

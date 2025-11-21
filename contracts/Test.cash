@@ -1,0 +1,10 @@
+pragma cashscript ^0.12.0;
+
+contract Test() {
+    function test() {
+        int i = 0;
+        while (i < 5) {
+            i = i + 1;
+        }
+    }
+}

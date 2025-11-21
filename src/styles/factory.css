@@ -1,0 +1,404 @@
+/* Factory Theme - Industrial, Retro, Fun */
+:root {
+  --factory-yellow: #FFD700;
+  --factory-black: #1a1a1a;
+  --factory-gray: #333333;
+  --factory-metal: #708090;
+  --factory-rust: #8B4513;
+  --factory-alert: #FF4500;
+}
+
+body {
+  background-color: var(--factory-gray);
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  /* Retro mono font */
+}
+
+.factory-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 4px solid var(--factory-black);
+  background-color: var(--factory-metal);
+  box-shadow: 10px 10px 0px var(--factory-black);
+}
+
+.hazard-header {
+  background: repeating-linear-gradient(45deg,
+      var(--factory-yellow),
+      var(--factory-yellow) 20px,
+      var(--factory-black) 20px,
+      var(--factory-black) 40px);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid var(--factory-black);
+  margin-bottom: 20px;
+}
+
+.hazard-header h1 {
+  background-color: var(--factory-black);
+  color: var(--factory-yellow);
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--factory-yellow);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.panel {
+  background-color: #2a2a2a;
+  border: 2px solid var(--factory-black);
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.panel-title {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: var(--factory-yellow);
+  color: var(--factory-black);
+  padding: 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid var(--factory-black);
+}
+
+.btn-factory {
+  background-color: var(--factory-rust);
+  color: white;
+  border: 2px solid var(--factory-black);
+  padding: 10px 20px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.1s;
+  box-shadow: 4px 4px 0px var(--factory-black);
+}
+
+.btn-factory:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--factory-black);
+}
+
+.btn-action {
+  background-color: var(--factory-yellow);
+  color: var(--factory-black);
+}
+
+.input-factory {
+  background-color: #000;
+  color: var(--factory-yellow);
+  border: 2px solid var(--factory-gray);
+  padding: 10px;
+  font-family: inherit;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.status-light {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  border: 2px solid #000;
+}
+
+.status-on {
+  background-color: #00ff00;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+.status-off {
+  background-color: #ff0000;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.wallet-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  background-color: var(--factory-gray);
+  color: white;
+  border: 2px solid var(--factory-black);
+  padding: 10px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.tab-btn.active {
+  background-color: var(--factory-yellow);
+  color: var(--factory-black);
+}
+
+.warning-box {
+  background-color: var(--factory-alert);
+  color: white;
+  padding: 15px;
+  border: 2px solid var(--factory-black);
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wallet-info {
+  background-color: #000;
+  padding: 15px;
+  border: 2px solid var(--factory-yellow);
+  margin-top: 15px;
+}
+
+.info-row {
+  margin-bottom: 15px;
+}
+
+.info-row label {
+  display: block;
+  color: var(--factory-yellow);
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.info-value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-value code {
+  flex: 1;
+  background-color: #1a1a1a;
+  color: #00ff00;
+  padding: 8px;
+  border: 1px solid var(--factory-gray);
+  word-break: break-all;
+  font-size: 12px;
+}
+
+.btn-copy {
+  background-color: var(--factory-yellow);
+  color: var(--factory-black);
+  border: 2px solid var(--factory-black);
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.faucet-info {
+  background-color: var(--factory-yellow);
+  color: var(--factory-black);
+  padding: 10px;
+  border: 2px solid var(--factory-black);
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.faucet-link {
+  color: #0066cc;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #00ff00;
+  color: var(--factory-black);
+}
+
+.btn-secondary {
+  background-color: var(--factory-gray);
+  color: white;
+}
+
+.wallet-display {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #000;
+  padding: 10px 15px;
+  border: 2px solid var(--factory-yellow);
+  margin-bottom: 15px;
+}
+
+.wallet-address {
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.wallet-balance {
+  color: var(--factory-yellow);
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+.btn-disconnect {
+  background-color: var(--factory-alert);
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.btn-factory:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* --- ANIMATIONS --- */
+
+/* 1. Hazard Stripes Animation */
+@keyframes scroll-stripes {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 56px 0;
+  }
+
+  /* 20px yellow + 20px black + diagonal adjustment */
+}
+
+.hazard-header {
+  background-size: 56px 56px;
+  /* Ensure pattern repeats correctly */
+  animation: scroll-stripes 2s linear infinite;
+}
+
+/* 2. Status Light Pulse */
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 5px #00ff00;
+    opacity: 1;
+  }
+
+  50% {
+    box-shadow: 0 0 15px #00ff00, 0 0 5px #00ff00 inset;
+    opacity: 0.8;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #00ff00;
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-red {
+  0% {
+    box-shadow: 0 0 0px #ff0000;
+    opacity: 1;
+  }
+
+  50% {
+    box-shadow: 0 0 10px #ff0000;
+    opacity: 0.8;
+  }
+
+  100% {
+    box-shadow: 0 0 0px #ff0000;
+    opacity: 1;
+  }
+}
+
+.status-on {
+  animation: pulse-green 2s infinite ease-in-out;
+}
+
+.status-off {
+  animation: pulse-red 2s infinite ease-in-out;
+}
+
+/* 3. Terminal Typing Effect */
+.monitor-box p {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  width: 0;
+  animation: typing 1s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Stagger animations */
+.monitor-box p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.monitor-box p:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.monitor-box p:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.monitor-box p:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.monitor-box p:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.monitor-box p:nth-child(6) {
+  animation-delay: 5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: var(--factory-yellow);
+  }
+}
+
+/* 4. Button Hover Glow */
+.btn-factory:not(:disabled):hover {
+  box-shadow: 0 0 15px var(--factory-yellow), 4px 4px 0px var(--factory-black);
+  transform: translateY(-1px);
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
